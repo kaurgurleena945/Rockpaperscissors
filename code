@@ -1,4 +1,13 @@
-static void main(String[] args){
+
+/**
+ * Rock Paper Scissors Program
+ *
+ * @Gurleen Kaur 
+ * @15 November 2020 
+ */
+public class Game
+{
+   public static void main(String[] args){
        int computer = (int) Math.random() * 3; 
        int user = 3; 
        
