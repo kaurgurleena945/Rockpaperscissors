@@ -8,38 +8,38 @@
 public class Game
 {
    public static void main(String[] args){
-       int computer = (int) Math.random() * 3; 
-       int user = 3; 
+       int computer = (int) Math.random() * 2; 
+       int user = 1; 
        
-       if (user == 1 && computer == 1){//seeing if the computer and user 
+       if (user == 0 && computer == 0){//seeing if the computer and user 
            //have used rock and seeing who wins
         System.out.println("Tie!");
+    }
+    if (user == 0 && computer == 1){
+        System.out.println("You lost.");
+    }
+    if (user == 0 && computer == 2){
+        System.out.println("You won!");
+    }
+
+    if (user == 1 && computer == 1){//seeing if the computer and user 
+        //have used paper and seeing who wins
+        System.out.println("Tie!");
+    }
+      if (user == 1 && computer == 0){
+        System.out.println("You won!");
     }
     if (user == 1 && computer == 2){
         System.out.println("You lost.");
     }
-    if (user == 1 && computer == 3){
-        System.out.println("You won!");
-    }
-
-    if (user == 2 && computer == 2){//seeing if the computer and user 
-        //have used paper and seeing who wins
+    if (user == 2 && computer == 2){//seeing if the computer and 
+        //user have used scissors and seeing who wins
         System.out.println("Tie!");
     }
       if (user == 2 && computer == 1){
         System.out.println("You won!");
     }
-    if (user == 2 && computer == 3){
-        System.out.println("You lost.");
-    }
-    if (user == 3 && computer == 3){//seeing if the computer and 
-        //user have used scissors and seeing who wins
-        System.out.println("Tie!");
-    }
-      if (user == 3 && computer == 2){
-        System.out.println("You won!");
-    }
-    if (user == 3 && computer == 1){
+    if (user == 2 && computer == 0){
         System.out.println("You lost.");
     }
 }
